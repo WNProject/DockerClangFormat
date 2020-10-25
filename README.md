@@ -3,15 +3,26 @@
 [![License]](LICENSE)
 [![Build][Build Badge]][Build Workflow]
 
+Docker container containing all needed tools to run **Clang Format**. Each
+container will contain only one version of the **Clang Format** but will contain
+all additional libraries needed.
+
 ## Usage
 
+There are 2 ways to use this container [Interactive](#interactive) and
+[Command](#command) mode.
+
 ### Interactive
+
+This will drop you into an interactive `bash` session.
 
 ```bash
 docker run -it -v /src:/src clang-format
 ```
 
 ### Command
+
+This will run the supplied command directly.
 
 ```bash
 docker run -v /src:/src clang-format [command]
