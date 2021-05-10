@@ -1,7 +1,7 @@
 # Docker Clang Format
 
 [![License]](LICENSE)
-[![Build][Build Badge]][Build Workflow]
+[![CI][CI Badge]][CI Workflow]
 
 Docker container containing all needed tools to run **Clang Format**. Each
 container will contain only one version of the **Clang Format** but will contain
@@ -38,5 +38,5 @@ Note that `CLANG_FORMAT_VERSION` defaults to `10` if not supplied.
 
 <!-- external links -->
 [License]: https://img.shields.io/github/license/WNProject/DockerClangFormat?label=License
-[Build Badge]: https://github.com/WNProject/DockerClangFormat/workflows/Build/badge.svg?branch=main
-[Build Workflow]: https://github.com/WNProject/DockerClangFormat/actions?query=workflow%3ABuild+branch%3Amain
+[CI Badge]: https://github.com/WNProject/DockerClangFormat/actions/workflows/ci.yml/badge.svg?branch=main
+[CI Workflow]: https://github.com/WNProject/DockerClangFormat/actions/workflows/ci.yml?query=branch%3Amain
