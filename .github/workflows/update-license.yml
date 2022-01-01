@@ -18,7 +18,7 @@ jobs:
       - name: Determine year
         id: year
         run: echo "::set-output name=value::$(date +%Y)"
-      - name: Create/switch to ${{env.BRANCH}}
+      - name: Switch to '${{env.BRANCH}}'
         run: |
           git fetch origin +refs/heads/$BRANCH:refs/heads/$BRANCH || true  
           git checkout $BRANCH || git checkout -b $BRANCH
