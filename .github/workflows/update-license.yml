@@ -47,8 +47,7 @@ jobs:
         uses: actions/github-script@v5
         with:
           script: |
-            const owner = '${{github.repository_owner}}';
-            const repo = 'DockerClangFormat';
+            const [owner, repo] = '${{github.repository}}'.split('/');
             const base = 'refs/heads/main';
             const head = 'refs/heads/${{env.BRANCH}}';
             const pullRequests = await github.rest.pulls.list({
