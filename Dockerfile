@@ -1,4 +1,4 @@
-FROM ubuntu:focal-20220426
+FROM ubuntu:focal-20220531
 
 # set input arguments
 ARG CLANG_FORMAT_VERSION="10"
